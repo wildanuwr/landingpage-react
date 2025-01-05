@@ -1,0 +1,268 @@
+/* Container untuk semua drip */
+.paint-drip-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Agar elemen tidak keluar layar */
+  display: flex; /* Membuat garis rata */
+}
+
+/* Setiap drip garis */
+.drip {
+  position: absolute;
+  top: -100%; /* Awal di luar layar */
+  width: 6%; /* Lebar setiap garis, lebih kecil */
+  height: 100%; /* Tinggi penuh */
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1)); /* Warna merah seperti cat */
+  animation: drip-down 3s ease-in-out forwards;
+}
+
+/* Penempatan garis */
+.drip:nth-child(1) {
+  left: 0;
+  animation-delay: 0s;
+}
+.drip:nth-child(2) {
+  left: 5%;
+  animation-delay: 0.2s;
+}
+.drip:nth-child(3) {
+  left: 10%;
+  animation-delay: 0.4s;
+}
+.drip:nth-child(4) {
+  left: 15%;
+  animation-delay: 0.6s;
+}
+.drip:nth-child(5) {
+  left: 20%;
+  animation-delay: 0.8s;
+}
+.drip:nth-child(6) {
+  left: 25%;
+  animation-delay: 1s;
+}
+.drip:nth-child(7) {
+  left: 30%;
+  animation-delay: 1.2s;
+}
+.drip:nth-child(8) {
+  left: 35%;
+  animation-delay: 1.4s;
+}
+.drip:nth-child(9) {
+  left: 40%;
+  animation-delay: 1.6s;
+}
+.drip:nth-child(10) {
+  left: 45%;
+  animation-delay: 1.8s;
+}
+.drip:nth-child(11) {
+  left: 50%;
+  animation-delay: 2s;
+}
+.drip:nth-child(12) {
+  left: 55%;
+  animation-delay: 2.2s;
+}
+.drip:nth-child(13) {
+  left: 60%;
+  animation-delay: 2.4s;
+}
+.drip:nth-child(14) {
+  left: 65%;
+  animation-delay: 2.6s;
+}
+.drip:nth-child(15) {
+  left: 70%;
+  animation-delay: 2.8s;
+}
+.drip:nth-child(16) {
+  left: 75%;
+  animation-delay: 3s;
+}
+.drip:nth-child(17) {
+  left: 80%;
+  animation-delay: 3.2s;
+}
+.drip:nth-child(18) {
+  left: 85%;
+  animation-delay: 3.4s;
+}
+.drip:nth-child(19) {
+  left: 90%;
+  animation-delay: 3.6s;
+}
+.drip:nth-child(20) {
+  left: 95%;
+  animation-delay: 3.8s;
+}
+
+/* Animasi turun */
+@keyframes drip-down {
+  0% {
+    top: -100%; /* Mulai di atas */
+  }
+  100% {
+    top: 0; /* Turun ke bawah */
+  }
+}
+
+/* Container untuk semua drip1 */
+.paint-drip1-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Agar elemen tidak keluar layar */
+  display: flex; /* Membuat garis rata */
+}
+
+/* Setiap drip1 garis */
+.drip1 {
+  position: absolute;
+  top: -100%; /* Awal di luar layar */
+  width: 6%; /* Lebar setiap garis, lebih kecil */
+  height: 100%; /* Tinggi penuh */
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1)); /* Warna merah seperti cat */
+  animation: drip1-down 4s ease-in-out forwards;
+}
+
+/* Penempatan garis */
+.drip1:nth-child(1) {
+  right: 0;
+  animation-delay: 0s;
+}
+.drip1:nth-child(2) {
+  right: 5%;
+  animation-delay: 0.2s;
+}
+.drip1:nth-child(3) {
+  right: 10%;
+  animation-delay: 0.4s;
+}
+.drip1:nth-child(4) {
+  right: 15%;
+  animation-delay: 0.6s;
+}
+.drip1:nth-child(5) {
+  right: 20%;
+  animation-delay: 0.8s;
+}
+.drip1:nth-child(6) {
+  right: 25%;
+  animation-delay: 1s;
+}
+.drip1:nth-child(7) {
+  right: 30%;
+  animation-delay: 1.2s;
+}
+.drip1:nth-child(8) {
+  right: 35%;
+  animation-delay: 1.4s;
+}
+.drip1:nth-child(9) {
+  right: 40%;
+  animation-delay: 1.6s;
+}
+.drip1:nth-child(10) {
+  right: 45%;
+  animation-delay: 1.8s;
+}
+.drip1:nth-child(11) {
+  right: 50%;
+  animation-delay: 2s;
+}
+.drip1:nth-child(12) {
+  right: 55%;
+  animation-delay: 2.2s;
+}
+.drip1:nth-child(13) {
+  right: 60%;
+  animation-delay: 2.4s;
+}
+.drip1:nth-child(14) {
+  right: 65%;
+  animation-delay: 2.6s;
+}
+.drip1:nth-child(15) {
+  right: 70%;
+  animation-delay: 2.8s;
+}
+.drip1:nth-child(16) {
+  right: 75%;
+  animation-delay: 3s;
+}
+.drip1:nth-child(17) {
+  right: 80%;
+  animation-delay: 3.2s;
+}
+.drip1:nth-child(18) {
+  right: 85%;
+  animation-delay: 3.4s;
+}
+.drip1:nth-child(19) {
+  right: 90%;
+  animation-delay: 3.6s;
+}
+.drip1:nth-child(20) {
+  right: 95%;
+  animation-delay: 3.8s;
+}
+
+/* Animasi turun */
+@keyframes drip1-down {
+  0% {
+    top: -100%; /* Mulai di atas */
+  }
+  100% {
+    top: 0; /* Turun ke bawah */
+  }
+}
+
+.box {
+  display: flex;
+  height: 200px;
+  width: 300px;
+  border-radius: 8px;
+  transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+}
+
+.spread-state .box:nth-child(1) {
+  transform: translate(-150px, -450px);
+}
+
+.spread-state .box:nth-child(2) {
+  transform: translate(150px, -550px);
+}
+
+.spread-state .box:nth-child(3) {
+  transform: translate(-150px, 550px);
+}
+
+.spread-state .box:nth-child(4) {
+  transform: translate(150px, 550px);
+}
+
+.merged-state .box {
+  transform: translate(0, 0);
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    display: flex;
+    height: 200px;
+    width: 230px;
+    border-radius: 8px;
+    transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .box {
+    display: flex;
+    height: 150px;
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+  }
+}
