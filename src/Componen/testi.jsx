@@ -33,7 +33,7 @@ const AnimatedBoxes = ({ inView }) => {
   }, [inView]);
 
   return (
-    <div className="relative w-full h-screen flex items-center max-lg:-mt-10 max-lg:ml-5 max-lg:items-end justify-end mr-40">
+    <div className="max-sm:hidden relative w-full h-screen flex items-center max-lg:-mt-10 max-lg:ml-5 max-lg:items-end justify-end mr-40">
       <div
         className={`grid grid-cols-2  max-lg:grid-cols-4 gap-6 max-lg:gap-40 transition-all duration-1000 ease-in-out ${
           animationStarted ? "merged-state" : "spread-state"
