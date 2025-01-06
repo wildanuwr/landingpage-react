@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
@@ -10,14 +10,15 @@ const navigation = [
 
 export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div>
-      <header className="absolute inset-x-0 top-0 z-20">
+      <header className="bg-orange-500 fixed shadow-md  inset-x-0 top-0 z-20">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only text-black">FTH Developer</span>
-              <img alt="" src="../logo.png" className="absolute -inset-10 left-11 max-md:left-2 h-40 w-auto" />
+              <img alt="" src="../logo.png" className="absolute -inset-10 left-11  mb-5 -mt-2 max-md:left-2 h-40 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -28,7 +29,7 @@ export default function HeroSection() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
                 {item.name}
               </a>
             ))}
@@ -52,8 +53,8 @@ export default function HeroSection() {
                 <XMarkIcon aria-hidden="true" className="size-6" />
               </button>
             </div>
-            <div className="fixed z-1 mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide--500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-neutral-700">
