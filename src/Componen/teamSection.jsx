@@ -33,7 +33,7 @@ const people = [
 
 export default function TeamSection() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div id="team" className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
           <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Kenali Tim Pengembang Perangkat Lunak Kami</h2>

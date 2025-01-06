@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "#Home" },
+  { name: "Tentang", href: "#tentang" },
+  { name: "Project", href: "#projek" },
+  { name: "Team", href: "#team" },
 ];
 
 export default function HeroSection() {
@@ -52,7 +52,7 @@ export default function HeroSection() {
                 <XMarkIcon aria-hidden="true" className="size-6" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="fixed z-1 mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
@@ -72,7 +72,7 @@ export default function HeroSection() {
         </Dialog>
       </header>
 
-      <div className="absolute inset-0 bg-red-600 clip-triangle z-10 animate-slideInLeft"></div>
+      <div id="Home" className="absolute inset-0 bg-red-600 clip-triangle z-10 animate-slideInLeft"></div>
       <div className="absolute inset-y-0 right-0 w-full bg-neutral-900 z-0 animate-slideInRight"></div>
 
       <div className="relative z-10 ">

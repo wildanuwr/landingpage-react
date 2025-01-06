@@ -74,7 +74,7 @@ const PaintDrip1Container = () => {
       {/* Tetesan air hanya muncul saat elemen sudah di dalam viewport */}
       {inView && Array.from({ length: 20 }).map((_, i) => <div key={i} className="drip1"></div>)}
       
-      <div className="ml-20 max-md:ml-5 absolute pt-60 z-1">
+      <div id="projek" className="ml-20 max-md:ml-5 absolute pt-60 z-1">
         <div className="lg:max-w-lg">
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Projek Yang sudah Kami buat

@@ -31,7 +31,7 @@ const PaintDripContainer = () => {
     <div ref={ref} className="absolute paint-drip-container -mt-3 -z-1">
       {inView && Array.from({ length: 20 }).map((_, i) => <div key={i} className="drip"></div>)}
 
-      <div className="ml-20 max-md:ml-5 max-lg:ml-4 absolute pt-60 max-md:mt-20 max-lg:pt-80 z-1">
+      <div id="tentang" className="ml-20 max-md:ml-5 max-lg:ml-4 absolute pt-60 max-md:mt-20 max-lg:pt-80 z-1">
         <div className="lg:max-w-lg">
           <h2 className="text-base/7 font-semibold text-white">Mengapa Memilih Kami?</h2>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Workflow Efisien, Hasil Maksimal</p>
